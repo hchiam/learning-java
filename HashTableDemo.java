@@ -1,9 +1,9 @@
 /*
- * code copied on Jan-2017 from:
- * https://www.tutorialspoint.com/java/java_hashtable_class.htm
- * 
  * How to compile and run code in Terminal/Command-Line:
  * http://stackoverflow.com/questions/2360995/how-do-i-compile-and-run-a-program-in-java-on-my-mac
+ * 
+ * Code copied on Jan-2017 from:
+ * https://www.tutorialspoint.com/java/java_hashtable_class.htm
  */
 
 import java.util.*;
