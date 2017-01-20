@@ -4,6 +4,8 @@
  *
  *Code copied on Jan-2017 from:
  *https://www.tutorialspoint.com/java/java_hashtable_class.htm
+ *
+ *I added commenting for learning purposes.
  */
 
 /*
