@@ -1,12 +1,16 @@
+/*
+ *In Terminal/Commandline, enter these two commands:
+ *javac testFileReader.java
+ *java testFileReader
+ */
+
 import java.io.*;
 import java.util.StringTokenizer;
 
 public class testFileReader {
     public static void main(String[] args) throws Exception {
         try {
-            String workingDir = System.getProperty("user.dir");
-            System.out.println(workingDir);
-            FileReader file = new FileReader(workingDir + "/testfile.txt");
+            FileReader file = new FileReader("testfile.txt");
             BufferedReader reader = new BufferedReader(file);
             String line = reader.readLine();
             while (line != null) {
