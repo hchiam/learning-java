@@ -1,16 +1,16 @@
-class ListNode {
-    public int value;
-    public ListNode next;
-    public ListNode() {
-        value = -1;
-        next = null;
-    }
-    public ListNode(int value, ListNode next) {
-        this.value = value;
-        this.next = next;
-    }
-}
 public class StackLL {
+    private class ListNode {
+        public int value;
+        public ListNode next;
+        public ListNode() {
+            value = -1;
+            next = null;
+        }
+        public ListNode(int value, ListNode next) {
+            this.value = value;
+            this.next = next;
+        }
+    }
     private ListNode elemTopOfStack = new ListNode();
     public void add(int x) {
         if (elemTopOfStack == null) {
