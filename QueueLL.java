@@ -1,5 +1,5 @@
 public class QueueLL {
-    class ListNode {
+    private class ListNode {
         public int value;
         public ListNode next = null;
         public ListNode(int value) {
