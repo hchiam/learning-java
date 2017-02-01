@@ -1,4 +1,8 @@
 public class CheckString {
+    
+    /*
+     *Naive O(n^2) function:
+     */
     public static boolean uniqueLetters(String str) {
         String letters = "";
         for (char cS : str.toCharArray()) {
@@ -14,6 +18,10 @@ public class CheckString {
         System.out.println("letters: " + letters);
         return true;
     }
+    
+    /*
+     *Better O(n) time complexity function:
+     */
     public static boolean alternateFunction(String str) {
         boolean[] letters = new boolean[256]; // assumes ASCII range from 'a' to 'z'
         for (int i=0; i<str.length(); i++) {
@@ -26,6 +34,10 @@ public class CheckString {
         }
         return true;
     }
+    
+    /*
+     *Even better function that saves a little bit more space:
+     */
     public static boolean alternateUsingBits(String str) { // assumes ASCII range starting from 'a'
         // save space by using a bit vector instead of an array
         int checker = 0; // each bit acts like a boolean array's elements
@@ -40,6 +52,7 @@ public class CheckString {
         }
         return true;
     }
+    
     public static void main(String[] args) {
         String myString = "example";
         Boolean check;
