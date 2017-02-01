@@ -32,13 +32,18 @@ public class RemoveDupLLUnsorted {
     
     // remove duplicate values from linked list ; store unique values in output LL
     public nodeLL removeDups() {
-        while (LL.next != null) {
+        nodeLL prev = null;
+        LL = LL.next;
+        while (LL != null) {
             //check seen values vs. current node's value
-            boolean seenBefore = seen.containsValue(LL.next.value); // O(1) t.c.
+            boolean seenBefore = seen.containsValue(LL.value); // O(1) t.c.
             //check if not seen, then add to newLL
-            if (!seenBefore) {
-                newLL.add(LL.next.value);
-                seen.put(1,LL.next.value); // would need to use hash function to get better keys
+            if (seenBefore) {
+                prev.next = LL.next;
+            } else {
+                newLL.add(LL.value);
+                seen.put(1,LL.value); // would need to use hash function to get better keys
+                prev = LL;
             }
             //if (seenBefore) LL.deleteVal(LL.value,LL);
             //iterate

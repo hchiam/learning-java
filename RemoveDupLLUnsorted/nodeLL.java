@@ -19,20 +19,32 @@ public class nodeLL { // linked-list implementation with only 1 class
         }
     }
     public void deleteVal(Integer v, nodeLL head) {
-        if (head != null) {
-            // need at least current & next nodes, with "next" node possibly to be deleted (marked)
-            // except if head
-            if (head.value == v) {
-                head = head.next;
-            } else if (head.next != null) {
-                nodeLL n = head;
-                while (n.next != null && n.next.value != v) {
-                    n = n.next;
-                }
-                if (n.next != null && n.next.value == v) {
-                    n.next = n.next.next;
-                }
+        //if (head != null) {
+        //    // need at least current & next nodes, with "next" node possibly to be deleted (marked)
+        //    // except if head
+        //    if (head.value == v) {
+        //        head = head.next;
+        //    } else if (head.next != null) {
+        //        nodeLL n = head;
+        //        while (n.next != null && n.next.value != v) {
+        //            n = n.next;
+        //        }
+        //        if (n.next != null && n.next.value == v) {
+        //            n.next = n.next.next;
+        //        }
+        //    }
+        //}
+        nodeLL n = head;
+        // if remove head
+        if (n.value == v) {
+            head = head.next;
+        }
+        // find next node value that matches
+        while (n.next != null) {
+            if (n.next.value == v) {
+                n.next = n.next.next;
             }
+            n = n.next;
         }
     }
     public void printLL() {
