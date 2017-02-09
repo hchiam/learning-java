@@ -18,10 +18,13 @@ public class Question {
 	 */
 	
 	public static void main(String a[]) {
+		// use method within this java file to create and get new Graph:
 		Graph g = createNewGraph();
+		// get start and end Nodes:
 		Node[] n = g.getNodes();
 		Node start = n[3];
 		Node end = n[5];
+		// test pathExists method within this java file:
 		System.out.println("pathExists(g, start, end) = " + pathExists(g, start, end));
 	}
 	
