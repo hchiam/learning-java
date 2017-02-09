@@ -10,7 +10,7 @@ public class Question {
 	
 	// state of "visiting" that each Node can be in:
 	public enum State {
-		Unvisited, Visited, Visiting;
+		NotVisitedYet, Visited, WillVisit;
 	}
 	
 	/*
@@ -69,10 +69,10 @@ public class Question {
         LinkedList<Node> q = new LinkedList<Node>();
         // (re)initialize "visiting" state to "not visited yet" for each node in the Graph
         for (Node u : g.getNodes()) {
-            u.state = State.Unvisited;
+            u.state = State.NotVisitedYet;
         }
         // set the start Node to "visiting"
-        start.state = State.Visiting;
+        start.state = State.WillVisit;
         // add start Node to the queue (the start Node is first in line to get "served")
         q.add(start);
         // create temporary Node u to hold next in line to "visit"/"serve"
@@ -86,11 +86,11 @@ public class Question {
             	// go through all its "next" Nodes
 	            for (Node v : u.getAdjacent()) {
 	            	// further investigate any of its "next" Nodes that have not been visited...
-	                if (v.state == State.Unvisited) {
+	                if (v.state == State.NotVisitedYet) {
 	                	if (v == end) { // say "yes" if one of those "next" Nodes happens to be the "destination"
 	                        return true;
 	                    } else { // otherwise mark each of its "next" Nodes as "visiting" and add to line-up queue of Nodes to "visit"/"serve"
-	                        v.state = State.Visiting;
+	                        v.state = State.WillVisit;
 	                        q.add(v);
 	                    }
 	                }
