@@ -77,7 +77,7 @@ public class Question {
         for (Node u : g.getNodes()) {
             u.state = State.NotVisitedYet;
         }
-        // set the start Node to "visiting"
+        // set the start Node's "visiting" state to "will visit"
         start.state = State.WillVisit;
         // add start Node to the queue (the start Node is first in line to get "served")
         q.add(start);
