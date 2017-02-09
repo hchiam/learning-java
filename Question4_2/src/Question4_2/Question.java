@@ -71,7 +71,7 @@ public class Question {
 	
 	// search for whether a path exists between start Node and end Node in the Graph:
     public static boolean pathExists(Graph g, Node start, Node end) {
-    	// create a queue (implemented by a linked list)
+    	// create a queue (implemented by a linked list) to track the next nodes to check
         LinkedList<Node> q = new LinkedList<Node>();
         // (re)initialize "visiting" state to "not visited yet" for each node in the Graph
         for (Node u : g.getNodes()) {
