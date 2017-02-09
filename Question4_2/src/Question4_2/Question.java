@@ -53,6 +53,12 @@ public class Question {
 		temp[0].addAdjacent(temp[3]);
 		temp[3].addAdjacent(temp[4]);
 		temp[4].addAdjacent(temp[5]);
+		/*
+		 * i.e.: 
+		 * 0 -> 1 / 2 / 3. 
+		 * 3 -> 4 -> 5. 
+		 * (Note directions. So 3 -> 4 -> 5, but 2 cannot get to 5 because its only connection is 0 -> 2, not 2 -> 0.)  
+		 */
 		
 		// put each Node from list of Nodes into Graph:
 		for (int i = 0; i < 6; i++) {
