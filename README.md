@@ -8,7 +8,7 @@ javac HelloWorld.java
 
 java HelloWorld
 
-## How to compile a package:
+## How to compile and run a package in Terminal/Command-Line:
 
 https://www.tutorialspoint.com/java/java_packages.htm
 
