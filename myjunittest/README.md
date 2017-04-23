@@ -12,6 +12,8 @@ https://github.com/junit-team/junit4/wiki/Download-and-Install
 * Navigate the folders to each of the .jar files above, and select them.
 * Make sure to hit 'Apply' and then 'OK' in that same earlier menu that appeared to confirm the things added to the Java Build Path.
 
+4) Make sure to include a line like this in your code:
+import org.junit.*;
 
 
 Example tutorial to learn from:
