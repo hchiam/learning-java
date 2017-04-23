@@ -16,6 +16,8 @@ https://github.com/junit-team/junit4/wiki/Download-and-Install
 import org.junit.*;
 
 
-Example tutorial to learn from:
+Example tutorials to learn from:
 
 http://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/
+
+https://www.tutorialspoint.com/junit
