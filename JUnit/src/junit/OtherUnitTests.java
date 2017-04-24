@@ -1,4 +1,4 @@
-package myjunittest;
+package junit;
 
 import org.junit.*; // to use JUnit:
 import static org.junit.Assert.assertEquals; // to do the specific JUnit test for checking a value:

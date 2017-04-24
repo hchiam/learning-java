@@ -1,4 +1,4 @@
-package myjunittest;
+package junit;
 
 import org.junit.runner.JUnitCore; // has .runClasses()
 import org.junit.runner.Result; // let's you get results of .runClasses()
