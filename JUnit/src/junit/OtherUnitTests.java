@@ -17,7 +17,12 @@ public class OtherUnitTests {
 	@Test // "@Test" makes this method into a test method:
 	public void testSubtract() {
 		int result = value1 - value2;
-		assertEquals(result, -1); // check that result == 3
+		assertEquals(result, -1); // check that result == -1
+	}
+	
+	@Test // "@Test" makes this method into a test method:
+	public void testExampleOfFail() {
+		assertEquals(1, 2); // check that 1 == 2
 	}
 	
 }
