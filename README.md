@@ -1,5 +1,5 @@
-# myJavaSandbox
-My Java sandbox.
+# Learning Java
+Practicing Java code.
 
 ## How to compile and run code in Terminal/Command-Line:
 http://stackoverflow.com/questions/2360995/how-do-i-compile-and-run-a-program-in-java-on-my-mac
