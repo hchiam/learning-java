@@ -1,6 +1,8 @@
 # Learning Java
 Practicing Java code.
 
+Just one of the things I'm learning/practicing. https://github.com/hchiam/learning
+
 ## How to compile and run code in Terminal/Command-Line:
 http://stackoverflow.com/questions/2360995/how-do-i-compile-and-run-a-program-in-java-on-my-mac
 
